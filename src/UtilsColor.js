@@ -138,7 +138,7 @@ HSLColor.RGBtoHSL = function(pR, pG, pB)
 				h = (1 / 3) + (dr - db);
 			break;
 			case b:
-				h = (2 / 3) + dg / dr;
+				h = (2 / 3) + dg - dr;
 			break;
 		}
 	}
