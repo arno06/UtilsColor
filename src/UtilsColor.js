@@ -98,7 +98,11 @@ Class.define(HSLColor, [RGBAColor],
 	},
 	getH:function(){return this._h * 360;},
 	getS:function(){return this._s},
-	getL:function(){return this._l}
+	getL:function(){return this._l},
+    toString:function()
+    {
+        return "hsl("+(this._h*360)+", "+this._s+", "+this._l+")";
+    }
 });
 
 /**
